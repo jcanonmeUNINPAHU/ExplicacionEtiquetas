@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de una pagina Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            background: url(https://fondosmil.com/fondo/23230.jpg);
+            margin: 0;
+        }
+        .encabezado{
+           background: url(https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/doctype-que-es-y-para-que-sirve-t1.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+        }
+        .encabezado img{
+            display: block;
+            margin: auto;
+        }
+        .encabezado h1{
+            font-size: 60px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .encabezado h2{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(0, 0, 10);
+        }
+        .container{
+            padding: 20px;
+            margin: 10px 100px;
+        }
+        .elemento1 img{
+            width: 40%;
+            height: 40%;
+            float: right;
+            margin-left: 20px;
+        }
+        .elemento1 h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+        }
+        h3{
+            color: rgb(203, 218, 198);
+        }
+        
+        .elementosEstructurales img{
+            float: left;
+            margin-right: 20px;
+            width: 40%;
+            height: 50%;
+        }
+        .elementosEstructurales h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .ElementosVisiblestitulo h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .ejemplo1{
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+            -webkit-column-gap: 7px;
+            -moz-column-gap: 7px;
+            column-gap: 7px;
+            -webkit-column-rule: 5px solid rgba(28,110,164,0.5);
+            -moz-column-rule: 5px solid rgba(28,110,164,0.5);
+            column-rule: 5px solid rgba(28,110,164,0.5);
+            padding-right: 30px;
+        }
+        .hs h1,h2,h3,h4,h5,h6{
+            color: #cbdac6;
+        }
+        .elementosTextos h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .elementosTextos img{
+            float: right;
+            margin-left: 20px;
+            width: 50%;
+            height: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="https://www.uninpahu.edu.co/wp-content/uploads/2020/07/LOGO-UNINPAHU.png" alt="LOGO-UNINPAHU">
+            <h1>Exlicacion de estructura y etiquetas para una pagina Web</h1>
+            <h2>Desarrollo Web</h2>
+            <h2>Estudiante : Jeferson David Cañon Melo</h2>
+        </div>
+    </header>
+    <main>
+        <div class ='container'>
+            <div class="elemento1">
+                <h2>Elementos Principales</h2>
+                <h3>Elemento : < !DOCTYPE html ></h3>
+                <img src="https://sites.google.com/site/btdisenoweb/_/rsrc/1506399621267/codigo-html/estructura-del-documento/html.png" alt="HTML-Doctype"  >
+                <p>
+                    Todos los documentos HTML deben comenzar con una <!DOCTYPE>declaración,
+                    La declaración no es una etiqueta HTML. Es una "información" para el navegador sobre qué tipo de documento esperar.
+                </p>
+                <h3>Elemento : < html ></h3>
+                <p>El elemento es el elemento raíz de una página HTML.</p>
+                <h3>Elemento : < Head ></h3>
+                <p>
+                    conocida en español como cabecera, es la parte que no se muestra en el navegador en el momento de cargar la página. 
+                    Esta etiqueta puede contener varios hijos que otorgan información sobre el sitio en cuestión.
+                </p>
+                <h3>Elemento : < body ></h3>
+                <p>
+                    La etiqueta HTLM < body> se utiliza para definir el cuerpo del documento HTML. Específicamente, es la parte en donde se describe el contenido de la página, 
+                    colores, forma, estructura, texto, imágenes. <br>
+                    Para indicar la etiqueta, se inicia con < body> y se culmina con < /body>, por lo tanto, el uso de ambas es obligatorio.
+                </p>
+                <h3>Elemento : < title ></h3>
+                <p> El elemento especifica un título para la página HTML (que se muestra en la barra de título del navegador o en la pestaña de la página)</p>
+            </div>
+            
+            <div class="elementosEstructurales">
+                <h2>Elementos Estructurales</h2>
+                <img src="http://www.cursosgis.com/wp-content/uploads/2017/06/html5-01.png" alt="ImganeEstructurada">
+                <h3>Elemento : < header ></h3>
+                <p>
+                    es normalmente utilizada como el encabezado de una sección, en ellos pueden encontrarse diversos elementos como vínculos, logos, tablas de 
+                    contenido o algunas introducciones.
+                </p>
+                <h3>Elemento : < article ></h3>
+                <p>
+                    Permite separar diversos elementos independientes que puedan estar contenidos en un mismo < section >.
+                    Puede ser un mensaje de foro, un comentario, un artículo o una entrada en un blog, que permite ser reutilizada o distribuible.
+                </p>
+                <h3>Elemento : < section ></h3>
+                <p>
+                    Representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. 
+                    Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.
+                </p>
+                <h3>Elemento : < aside ></h3>
+                <p>
+                    Podemos verlo como la representación de una sección, en la cual hay información que está relacionada indirectamente 
+                    con el contenido principal descrito en el documento.
+                </p>
+                <h3>Elemento : < nav ></h3>
+                <p>
+                    Es simplemente un contenedor de enlaces de navegación. Esta etiqueta te permite dirigirte a otras 
+                    secciones o a enlaces externos. Es muy útil en la organización del contenido de la página.
+                </p>
+                <h3>Elemento : < footer ></h3>
+                <p>
+                    Podemos definirlo de una manera sencilla como el pie de una sección, un pie de página, que es muy probable que contenga información acerca del autor 
+                    o creador de dicha sección o datos, como los derechos de autor.
+                    Es utilizado comúnmente para colocar firmas, información de licencias, los cuales pueden encontrarse consecutivamente a lo largo del sitio.
+                </p>
+                <h3>Elemento : < div ></h3>
+                <p>
+                    Con la etiqueta div (que se refiere a división), puedes agrupar los diferentes contenidos o hacer secciones. Es obligatoria y se escribe
+                    < div > y < /div >. En ella puedes encontrar texto o elementos en línea o bloques.
+                </p>
+            </div>
+            <div class="ElementosVisibles">
+                <div class="ElementosVisiblestitulo">
+                    <h2>Elementos Visibles</h2>
+                </div>
+                <h3>Elemento : < ol ></h3>
+                <p>
+                    Es un elemento de bloque que nos permite hacer listas ordenadas alfanuméricamente generadas de forma automática a 
+                    medida que escribimos diferentes puntos de información, representados a su vez con la etiqueta < li >.
+                </p>
+                <p>
+                    El código correcto requiere la etiqueta < ol> al inicio. Después hemos de colocar cada elemento del listado precedido por la etiqueta < li> y delimitado por < /li>. 
+                    Cuando el contenido esté completo, se cierra con la etiqueta < /ol>.Una lista ordenada puede contener texto y otros elementos como tablas, 
+                    imágenes e incluso sublistas (listas anidadas) tanto ordenadas como desordenadas.
+
+                    <br><strong> Ejemplo:</strong>
+                    <ol>
+                        <li>Enero</li>
+                        <li>Febrero</li>
+                        <li>Marzo</li>
+                    </ol>
+                </p>
+                <p>
+                    <strong>Tipo: </strong><br>
+                    Permite definir el tipo de identificador que aplicaremos para dar orden a la lista. Puede tomar distintos valores:
+                    “1” – Orden lógico numérico, por defecto.
+                    “a” o “A” – Orden alfabético en minúsculas o mayúsculas.
+                    “i” o “I”– Orden por números romanos en minúsculas o mayúsculas.
+                    <div class="ejemplo1">
+                        <br><br><strong>Ejemplo: 1 </strong>
+                        <ol type="1">
+                            <li>Enero</li>
+                            <li>Febrero</li>
+                            <li>Marzo</li>
+                        </ol>
+                        
+                        <br><strong>Ejemplo: a </strong>
+                        <ol type="a">
+                            <li>Enero</li>
+                            <li>Febrero</li>
+                            <li>Marzo</li>
+                        </ol>
+                        
+                        <br><strong>Ejemplo: A </strong>
+                        <ol type="A">
+                            <li>Enero</li>
+                            <li>Febrero</li>
+                            <li>Marzo</li>
+                        </ol>
+                        <br><strong>Ejemplo: i </strong>
+                        <ol type="i">
+                            <li>Enero</li>
+                            <li>Febrero</li>
+                            <li>Marzo</li>
+                        </ol>
+                        <br><strong>Ejemplo: I </strong>
+                        <ol type="I">
+                            <li>Enero</li>
+                            <li>Febrero</li>
+                            <li>Marzo</li>
+                        </ol>
+                    </div>
+                </p>
+                <h3>Elemento : < li ></h3>
+                <p>
+                    La etiqueta HTML li (iniciales de list item, en inglés) es un elemento de lista que demarca cada ítem o punto de una lista, 
+                    ya sea ordenada (elemento < ol>) o desordenada (elemento < ul>).
+                </p>
+                <p>
+                    En código fuente, su empleo implica la etiqueta < li> al inicio, seguida del texto o descripción correspondiente al punto o ítem de lista, 
+                    delimitado con la etiqueta de cierre < /li>. Asimismo, requiere la existencia de una lista o menú, lo cual ocurre al anteponer las etiquetas < ul>, < ol> 
+                    o < menu> y con la escritura de las etiquetas < /ul>, < /ol> o < /menu> como complemento al final.
+                    <br><strong> Ejemplo :</strong>
+                    <ul>
+                        <li>Agua</li>
+                        <li>Jugo de limón</li>
+                        <li>Azúcar.</li>
+                    </ul>
+                </p>
+                <h3>Elemento : < ul></h3>
+                <p>
+                    Es un signo de grupo que obligatoriamente empieza con < ul> y termina con < /ul>.
+                    Lo usas a través de cajas y bloques.
+                    Está conformado por uno y más componentes.
+                    Dentro del bloque ul, los textos están comprendidos entre < li> y < /li>.
+                    La configuración ul se utiliza para exponer listas no ordenadas y sus características descriptivas te ayudarán a aplicar el formato de manera correcta desde el principio.
+                </p>
+                <h3>Elemetos : < h1>, < h2>, < h3>, < h3>, < h5> , < h6> </h3>
+                <p>
+                    Las etiquetas para los títulos en HTML son < h1>, < h2>, < h3>, < h3>, < h5> y < h6> para su inicio y en el cierre de esta se utilizan < /h1>, < /h2>, < /h3>, < /h3>, < /h5> y < /h6>. 
+                    Es indistinto si utilizas minúsculas o mayúsculas, por tanto, es lo mismo < h1> o < H1>.
+                    <br><br><strong>Ejemplo: </strong>
+                    <div class="hs">
+                        <h1>Texto muy grande H1</h1> 
+                        <h2>Texto grande H2</h2>
+                        <h3>Texto un poco más grande de lo normal H3</h3>
+                        <h4>Texto normal H4</h4>
+                        <h5>Texto pequeño H5</h5>
+                        <h6>Texto muy pequeño H6</h6>
+                    </div>
+                </p>
+                <h3>Elemento:  Style </h3>
+                <p>
+                    Con el elemento HTML style, como autor podrás insertar información de hojas de estilo en el documento.
+                    Las etiquetas de este elemento , se definen como elementos de cabecera, por lo tanto, su particularidad es que solo pueden ser 
+                    declaradas en el encabezado del documento.
+                </p>
+            </div>
+            <div class="elementosTextos">
+                <h2>Etiquetas texto</h2>
+                <h3>Elemento: < br> </h3>
+                <p>
+                    La etiqueta vacía <br> está pensada para insertar saltos de línea en un bloque (por ejemplo, para mostrar varios versos de un poema). 
+                    La separación entre líneas es la misma que dentro de un bloque (normalmente, inferior a la separación entre bloques).
+                </p>
+                <img src="https://image.slidesharecdn.com/producto4etiquetasdehtml-140902123859-phpapp01/95/slide-7-1024.jpg" alt="textoLetras">
+                <h3>Elemento:  < span> </h3>
+                <p>
+                    La etiqueta < span> no tiene un significado definido y es la que se debe utilizar cuando las otras etiquetas no son adecuadas.
+                     Se suele incluir el atributo class para especificar el significado que se le quiere dar a la etiqueta.
+                    Los navegadores no muestran la etiqueta < span> de ninguna forma especial.
+                </p>
+                
+                <h3>Elemento:  < em> </h3>
+                <p>
+                    a etiqueta < em> está pensada para dar énfasis a su contenido, es decir, para llamar la atención sobre ese contenido.
+                    Los navegadores suelen mostrar la etiqueta < em> en cursiva
+                </p>
+                <h3>Elemento:  < b> </h3>
+                <p>
+                    La etiqueta < b> está pensada para identificar texto sobre el que se quiere llamar la atención, pero sin que eso signifique que
+                     es importante, como los términos clave en un resumen, nombre de productos comerciales, etc.
+                </p>
+                <h3>Elemento:  < i> </h3>
+                <p>
+                    a etiqueta < i> está pensada para identificar texto con un significado especial, como nombres de especies, términos técnicos, expresiones extranjeras, etc.
+                    Los navegadores suelen mostrar la etiqueta < i> en cursiva 
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+
+</footer>
+</html>
