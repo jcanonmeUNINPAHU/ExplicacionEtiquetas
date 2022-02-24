@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            background: url(https://fondosmil.com/fondo/23230.jpg);
+            margin: 0;
+        }
+        .encabezado{
+           background: url(https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/doctype-que-es-y-para-que-sirve-t1.png);
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: cover;
+        }
+        .encabezado img{
+            display: block;
+            margin: auto;
+            transition: width 2s, height 2s, transform 2s ease;
+        }
+        .encabezado img:hover{
+            width: 30%;
+            height: 30%;
+            background: whitesmoke;
+            transform: rotate(360deg);
+        }
+        .encabezado h1{
+            font-size: 60px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        .encabezado h2{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(0, 0, 10);
+        }
+        .container{
+            padding: 20px;
+            margin: 10px 100px;
+        }
+        .elemento1 img{
+            width: 40%;
+            height: 40%;
+            float: right;
+            margin-left: 20px;
+            transition: width 2s, height 2s ease-in;
+        }
+        .elemento1 img:hover{
+            width: 50%;
+            height: 50%;
+        }
+        .elemento1 h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+        }
+        h3{
+            color: rgb(203, 218, 198);
+        }
+        
+        .elementosEstructurales img{
+            float: left;
+            margin-right: 20px;
+            width: 40%;
+            height: 50%;
+            transition: width 4s, height 4s ease-in-out;
+        }
+        .elementosEstructurales img:hover{
+            width: 45%;
+            height: 45%;
+        }
+
+        .elementosEstructurales h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .ElementosVisiblestitulo h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .ejemplo1{
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+            -webkit-column-gap: 7px;
+            -moz-column-gap: 7px;
+            column-gap: 7px;
+            -webkit-column-rule: 5px solid rgba(28,110,164,0.5);
+            -moz-column-rule: 5px solid rgba(28,110,164,0.5);
+            column-rule: 5px solid rgba(28,110,164,0.5);
+            padding-right: 30px;
+        }
+        .hs h1,h2,h3,h4,h5,h6{
+            color: #cbdac6;
+        }
+        .elementosTextos h2{
+            text-align: center;
+            color: blueviolet;
+            font-size: 44px;
+            margin: 80px;
+        }
+        .elementosTextos img{
+            float: right;
+            margin-left: 20px;
+            width: 50%;
+            height: 50%;
+            transition: width 2s, height 2s ease-out;
+        }
+        .elementosTextos img:hover{
+            width: 60%;
+            height: 60%;
+        }
+        .container h2:hover{
+            transform: rotate(20deg);
+            color: rgb(239, 238, 247);
+        }
+        .container h3:hover{
+            transform: scale(1.15);
+            color: blueviolet;
+        }
+       
